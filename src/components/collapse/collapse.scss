@@ -5,6 +5,7 @@
     cursor: pointer;
     border-radius: 5px;
     max-width: 1223px;
+    margin: auto;
 
     @include desktop {
             min-height: 50px;
