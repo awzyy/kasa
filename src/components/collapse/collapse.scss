@@ -1,0 +1,75 @@
+@import "../../sass/main.scss";
+
+.collapse {
+    background-color: $color-tertiary;
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 1223px;
+
+    @include desktop {
+            min-height: 50px;
+    }
+
+    &_content {
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        &.open {
+            .collapse_content {
+                visibility: visible;
+                height: auto;
+                padding: 20px;
+                background-color: $color-tertiary;
+                color: $color-secondary;
+                opacity: 1;
+                line-height: 24px;
+                transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+                border-radius: 5px;
+            }
+        }
+
+
+    
+    &_title {
+        background-color: $color-secondary;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+        color: $color-primary;
+        font-weight: 500;
+        margin-bottom: 0;
+
+        @include desktop {
+                    min-height: 30px;
+        }
+        .arrow {
+        margin-top: 8px;
+        max-height: 12px;
+        transition: transform 0.5s ease-in-out;
+        &.open {
+                transform: rotate(180deg);
+                margin-top: 8px;
+            }
+        }
+    }
+  
+}
+
+.accomodation-collapse {
+    @include desktop {
+    display: flex;
+    justify-content: space-between;
+    min-width: 580px;
+    gap: 50px;
+    &_item {
+            width: 100%;
+            @include desktop {
+                            width: 100%;
+            }
+            }
+}
+}
+
