@@ -1,0 +1,114 @@
+@import "../../sass/main.scss";
+
+.accomodation {
+    margin: 20px;
+    color: $color-secondary;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+    margin: 50px 100px 0 100px;
+
+    &_title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;   
+        justify-content: space-between;
+        margin: 0;
+    }
+    }
+        }
+
+.host-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.accomodation_host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include desktop {
+        margin-right: 0;
+    }
+}
+
+  .picture {
+            border-radius: 50%;
+            margin-left: 10px;
+            width: 32px;
+
+            @include desktop {
+                width: 64px;
+            }
+        }
+
+
+.host-container {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    @include desktop {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+}
+}
+.tag {
+    background-color: $color-secondary;
+    color: white;
+    border-radius: 5px;
+    height: 18px;
+    border-style: none;
+    font-size: 10px;
+    margin-right: 5px;
+    min-width: 85px;
+
+@include desktop {
+    min-width: 110px;
+    height: 25px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+}
+
+
+.stars {
+    img {
+            height: 24px;
+
+            @include desktop {
+                margin-top: 0;
+                margin-bottom: 20px;
+ }
+        }
+
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 0;
+    @include desktop {
+    font-size: 36px;
+    }
+}
+
+.container-collapse {
+    @include desktop {
+    margin-right: 100px;
+    
+}}
+
+.info-container {
+    @include desktop {
+     display: flex;
+     justify-content: space-between;
+    }
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+}
