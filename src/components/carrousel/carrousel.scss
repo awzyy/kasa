@@ -23,25 +23,34 @@
         width: 96px;
         height: 96px;
     }
+    @include mobile {
+        display: none;
+    }
 }
 &_arrow_left {
     cursor: pointer;
     position: absolute;
     top: 45%;
     height: 15%;
-        @include desktop {
-            width: 96px;
-            height: 96px;
-            }
+    @include desktop {
+        width: 96px;
+        height: 96px;
+    }
+    @include mobile {
+        display: none;
+    }
 }
 }
 
 .count {
     position: absolute;
     bottom: 5px;
-    left: 40%;
+    left: 48%;
     @include desktop {
         left: 50%;
+    }
+    @include mobile {
+        display: none;
     }
 }
 
