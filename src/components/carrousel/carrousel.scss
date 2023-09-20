@@ -23,9 +23,6 @@
         width: 96px;
         height: 96px;
     }
-    @include mobile {
-        display: none;
-    }
 }
 &_arrow_left {
     cursor: pointer;
@@ -35,9 +32,6 @@
     @include desktop {
         width: 96px;
         height: 96px;
-    }
-    @include mobile {
-        display: none;
     }
 }
 }
