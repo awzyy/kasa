@@ -51,7 +51,7 @@
         max-height: 12px;
         transition: transform 0.5s ease-in-out;
         &.open {
-                transform: rotate(180deg);
+                transform: rotate(-180deg);
                 margin-top: 8px;
             }
         }
